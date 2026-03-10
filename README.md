@@ -1,6 +1,6 @@
 # 🛒 MediaStore
 
-> E-commerce với sản phẩm là Books, CDs/LPs, DVDs — sử dụng framework ASP.NET Core 9 và kiến trúc MVC, có tích hợp cổng thanh toán VNPay, triển khai trên render, database sử dụng là Azure SQL database. Link deploy: 
+> E-commerce với sản phẩm là Books, CDs/LPs, DVDs — sử dụng framework ASP.NET Core 9 và kiến trúc MVC, có tích hợp cổng thanh toán VNPay, triển khai trên render, database sử dụng là Azure SQL database. Link website: https://media-store-81kx.onrender.com
 
 [![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?logo=microsoftsqlserver)](https://www.microsoft.com/sql-server)
@@ -26,10 +26,6 @@
 
 **Yêu cầu:** [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9), SQL Server
 
-```bash
-git clone https://github.com/<your-org>/ISD.VN.20242-14.git
-cd ISD.VN.20242-14/MediaStore
-```
 
 Chạy ứng dụng:
 
