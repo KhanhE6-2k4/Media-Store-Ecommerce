@@ -1,0 +1,132 @@
+###############################################################################
+# .gitignore — MediaStore (ASP.NET Core 9 MVC)
+# Maintained following .NET community best practices
+###############################################################################
+
+# ─── Build Output ─────────────────────────────────────────────────────────────
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+published/
+
+# ─── .NET / NuGet ─────────────────────────────────────────────────────────────
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+.nuget/
+
+# ─── Secrets & Sensitive Config ───────────────────────────────────────────────
+# Environment-specific configs may contain DB passwords, API keys, SMTP creds
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Staging.json
+secrets.json
+.env
+.env.*
+!.env.example
+
+# ─── User-specific Project Files ──────────────────────────────────────────────
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+.vs/
+
+# ─── Visual Studio ────────────────────────────────────────────────────────────
+.idea/
+*.rsuser
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+# Keep .vscode/extensions.json (recommended extensions list)
+!.vscode/extensions.json
+
+# ─── JetBrains Rider ──────────────────────────────────────────────────────────
+.idea/
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+# ─── Rider/ReSharper ──────────────────────────────────────────────────────────
+[Rr]ider*/
+
+# ─── Entity Framework Migrations (keep migrations, ignore snapshots if needed) ─
+# NOTE: Migrations are intentionally committed to track schema changes.
+# Remove the line below if you prefer to commit snapshots too.
+# **/Migrations/*ModelSnapshot.cs
+
+# ─── Test & Coverage Reports ──────────────────────────────────────────────────
+TestResults/
+*.trx
+coverage*/
+*.coverage
+*.coveragexml
+cobertura*.xml
+lcov.info
+
+# ─── ASP.NET Core Data Protection Keys ───────────────────────────────────────
+# Keys are persisted to DB at runtime; local XML files must NOT be committed
+DataProtection-Keys/
+keys/
+
+# ─── Static Assets Compilation ────────────────────────────────────────────────
+wwwroot/lib/          # Managed by LibMan / npm, restored on build
+wwwroot/dist/
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+# Keep Dockerfile and docker-compose files
+# Ignore local override and generated files
+docker-compose.override.yml
+.dockerignore.local
+
+# ─── OS-generated Files ───────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.nfs*
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ─── Temporary Files ──────────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+*.orig
+
+# ─── Certificate / Key Files ──────────────────────────────────────────────────
+*.pfx
+*.p12
+*.pem
+*.cer
+*.crt
+*.key
+
+# ─── Profiling ────────────────────────────────────────────────────────────────
+*.psess
+*.vsp
+*.vspx
+*.sap
