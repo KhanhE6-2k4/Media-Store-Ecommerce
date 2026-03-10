@@ -24,8 +24,16 @@ namespace MediaStore.Controllers
             _sessionService = sessionService;
         }
 
+        private void ClearOrderSession()
+        {
+            _sessionService.Remove(MySetting.DELIVERY_KEY);
+            _sessionService.Remove(MySetting.RUSH_ORDER_KEY);
+            _sessionService.Remove(MySetting.ORDER_KEY);
+            _sessionService.Remove(MySetting.INVOICE_KEY);
+        }
         public IActionResult Index()
         {
+            ClearOrderSession();
             return View();
         }
 
@@ -46,6 +54,12 @@ namespace MediaStore.Controllers
             }
 
             _sessionService.Set(MySetting.DELIVERY_KEY, deliveryForm);
+
+            if (!deliveryForm.IsRushOrder)
+            {
+                _sessionService.Remove(MySetting.RUSH_ORDER_KEY);
+            }
+
 
             return deliveryForm.IsRushOrder
                 ? RedirectToAction("RushOrder", "PlaceRushOrder")

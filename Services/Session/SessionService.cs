@@ -22,6 +22,11 @@ namespace MediaStore.Services.Session
             _httpContextAccessor.HttpContext.Session.Set(key, value);
         }
 
+        public void Remove(string key)
+        {
+            _httpContextAccessor.HttpContext.Session.Remove(key);
+        }
+
         public void Clear()
         {
             _httpContextAccessor.HttpContext.Session.Clear();
