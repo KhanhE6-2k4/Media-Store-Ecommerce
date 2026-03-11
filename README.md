@@ -1,11 +1,21 @@
-# 🛒 MediaStore
+<div align="center">
+
+# 🛒 Media Store
 
 > E-commerce với sản phẩm là Books, CDs/LPs, DVDs — sử dụng framework ASP.NET Core 9 và kiến trúc MVC, có tích hợp cổng thanh toán VNPay, triển khai trên render, database sử dụng là Azure SQL database. Link website: https://media-store-81kx.onrender.com
 
 [![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?logo=microsoftsqlserver)](https://www.microsoft.com/sql-server)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![Azure SQL](https://img.shields.io/badge/Azure%20SQL-Database-0078D4?logo=microsoftazure)](https://azure.microsoft.com/products/azure-sql/)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)](https://www.docker.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![DockerHub](https://img.shields.io/badge/DockerHub-image-2496ED?logo=docker)](https://hub.docker.com/)
+[![Render](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render)](https://render.com/)
+[![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?logo=githubactions)](https://github.com/features/actions)
+
+</div>
 
 ---
 
@@ -14,11 +24,13 @@
 | | |
 |---|---|
 | Framework | ASP.NET Core 9 MVC · C# 13 |
-| Database | SQL Server + EF Core 9 |
+| UI | HTML, CSS, JS |
+| Database | SQL Server + EF Core 9 . Azure SQL database |
 | Payment | VNPay Gateway |
-| PDF / Email | QuestPDF · MailKit |
+| Email | MailKit |
+| Storage | Session storage |
 | Auth | Cookie Authentication |
-| Deploy | Docker → Render.com |
+| Deploy | Docker → Render |
 
 ---
 
@@ -92,7 +104,7 @@ MediaStore/
 
 ---
 
-## 🚢 Deployment (Render.com)
+## 🚢 Deployment (Render + Azure)
 
 Các xử lý đặc thù cho Render đã được cấu hình sẵn trong `Program.cs`:
 
@@ -104,4 +116,7 @@ Các xử lý đặc thù cho Render đã được cấu hình sẵn trong `Prog
 
 ---
 
+## 📜 License
+
+This project is licensed under the **MIT License**.
 
